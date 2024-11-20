@@ -1,0 +1,26 @@
+{
+  "name": "outlook",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Gustavo Lopes",
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "onload.js"
+    ]
+  }],
+  "action": {
+    "default_title": "",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
